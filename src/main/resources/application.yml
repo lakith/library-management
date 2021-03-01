@@ -1,0 +1,19 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    username: "tuepshhsvrvloo"
+    password: "8573155a69d66e84b97ba30edb5bfe5f5578a57501a6e539675db5abad1ed603"
+    platform: "postgres"
+    url: "jdbc:postgresql://ec2-34-203-255-149.compute-1.amazonaws.com:5432/d80j24711e18lu"
+  jpa:
+    database: POSTGRESQL
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    show-sql: true
